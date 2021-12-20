@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="stylesheet" th:href="@{/css/cart.css}">
+    
+<title>Insert title here</title>
+</head>
+<body>
+<!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+           <lord-icon class="lordicon"
+    src="https://cdn.lordicon.com/fyhanzjw.json"
+    trigger="loop"
+    colors="primary:#c79816,secondary:#a5e830">
+</lord-icon><h1>Grocery</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/homelogin">Home</a>
+                </li>
+               
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About </a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+      <a href="/home" class="btn btn-light my-2 my-sm-0 mr-1" type="submit">LogOut</a>    </form>
+  </div>
+  </nav>
+  </section>
+ <div class="container"> 
+   <h1>Vegitables</h1>
+   <div id="alerts"></div>
+<div class="productcont mt-5">
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/bell paper.jpg}" class="product-img">
+            <h3 class="productname">Bellpaper</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-80</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        <img th:src="@{/images/Icons/veg/broccoli.jpg}" class="product-img">
+            <h3 class="productname">Broccoli</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-70</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/cabbage.jpg}" class="product-img">
+            <h3 class="productname">Cabbage</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-60</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/corn.jpg}" class="product-img">
+            <h3 class="productname">Corn</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-40</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/cucumber.jpg}" class="product-img">
+            <h3 class="productname">Cucumbers</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/eggplant.jpg}" class="product-img">
+            <h3 class="productname">Eggplants</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-35</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/garlic.jpg}" class="product-img">
+            <h3 class="productname">Garlics</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-200</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/ginger.jpg}" class="product-img">
+            <h3 class="productname">Ginger</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-60</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/mushroom.jpg}" class="product-img">
+            <h3 class="productname">Mushrooms</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-800</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/onion.jpg}" class="product-img">
+            <h3 class="productname">Onions</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-80</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/potato.jpg}" class="product-img">
+            <h3 class="productname">Potatos</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-40</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/pumkin.jpg}" class="product-img">
+            <h3 class="productname">Pumkin</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-120</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/spinach.jpg}" class="product-img">
+            <h3 class="productname">Spinach</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-30</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/sweet potato.jpg}" class="product-img">
+            <h3 class="productname">Sweet potatos</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-70</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/tomato.jpg}" class="product-img">
+            <h3 class="productname">Tomatoes</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-60</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/Icons/veg/carrot.jpg}" class="product-img">
+            <h3 class="productname">Carrots</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">INR-50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        </div>
+        <div class="cart-container">
+          <h2>Cart</h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>INR<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            <a href="/checkout"><button id="checkout">Checkout</button></a>
+          </div>
+        </div>
+</div>
+
+  
+ 
+<script type="text/javascript" th:src="@{/js/cart.js}"></script>
+</body>
+</html>

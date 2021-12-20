@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+.navbar-brand .lordicon{
+	height: 3em;
+	width: 3em;
+	align-self: center;
+	margin-right:50px;
+}
+.error{
+	align-self: center;
+}
